@@ -29,4 +29,6 @@ public class ProductRequest {
     private String performanceProduct;
     @NotBlank(message = "La compatibilidad del producto es requerido")
     private String compatibilityProduct;
+    @NotBlank(message = "El precio del producto es requerido")
+    private String priceProduct;
 }

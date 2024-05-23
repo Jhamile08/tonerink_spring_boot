@@ -37,5 +37,7 @@ public class Product {
     private String performanceProduct;
     @Column(nullable = false)
     private String compatibilityProduct;
+    @Column(nullable = false)
+    private String priceProduct;
 
 }
