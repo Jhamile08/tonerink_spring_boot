@@ -21,5 +21,4 @@ public class ProductResponse {
     private String nameProduct;
     private String performanceProduct;
     private String compatibilityProduct;
-    private String priceProduct;
 }
