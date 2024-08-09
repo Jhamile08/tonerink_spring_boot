@@ -23,5 +23,3 @@ services:
     restart: always
     healthcheck:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
-      timeout: 30s
-      retries: 10
