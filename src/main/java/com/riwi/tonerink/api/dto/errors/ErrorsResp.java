@@ -1,6 +1,5 @@
 package com.riwi.tonerink.api.dto.errors;
 import java.util.List;
-import java.util.Map;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,5 +13,5 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ErrorsResp extends BaseErrorResp{
-    private List<Map<String,String>> errors; 
+    private List<String> errors;    
 }

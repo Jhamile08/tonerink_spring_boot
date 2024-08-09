@@ -47,7 +47,6 @@ public class ProductService implements IProductService{
         product.setNameProduct(request.getNameProduct());
         product.setPerformanceProduct(request.getPerformanceProduct());
         product.setCompatibilityProduct(request.getCompatibilityProduct());
-        product.setPriceProduct(request.getPriceProduct());
        
         return this.entityToResp(this.productRepository.save(product));
 
@@ -83,7 +82,7 @@ public class ProductService implements IProductService{
         product.setNameProduct(request.getNameProduct());
         product.setPerformanceProduct(request.getPerformanceProduct());
         product.setCompatibilityProduct(request.getCompatibilityProduct());
-        product.setPriceProduct(request.getPriceProduct());
+
         return product;
     }
 
@@ -97,7 +96,7 @@ public class ProductService implements IProductService{
         resp.setNameProduct(entity.getNameProduct());
         resp.setPerformanceProduct(entity.getPerformanceProduct());
         resp.setCompatibilityProduct(entity.getCompatibilityProduct());
-        resp.setPriceProduct(entity.getPriceProduct());
+   
         return resp;
     }
         private Product find(Integer id) {
