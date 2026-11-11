@@ -14,7 +14,11 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://127.0.0.1:5501")
+                        .allowedOrigins(
+                                "http://127.0.0.1:5501",
+                                "https://tonerinksas.com",
+                                "https://tonerink-fronted.onrender.com"
+                        )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD")
                         .allowCredentials(true);
             }
